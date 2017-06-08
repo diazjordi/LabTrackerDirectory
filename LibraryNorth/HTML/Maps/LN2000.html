@@ -1,5 +1,12 @@
 <?php $config = require('/var/www/Resources/PHP/config1.php'); ?>
 <?php include($config['header']); ?>
+
+<?php
+    //Area specific config file
+    //$area = "ITS";
+    $area = 'LibraryNorth';
+    require_once($config['db_connect']); 
+?>
     
         <body>
 
@@ -54,14 +61,14 @@
             <style type="text/css">
                 .container    {margin: 0 auto !important; float: none !important; text-align: center;}
 
-                table         {border-collapse:collapse;border-spacing:0;margin: 1px auto; float: none; width: 100% !important;font-family: "Times New Roman", Times, serif; height: 100%;table-layout: fixed;}
+                table         {border-collapse:collapse;border-spacing:0;margin: 1px auto; float: none; width: 100% !important;font-family: Futura; height: 100%;table-layout: fixed;}
                 td            {font-size:36px;padding:1px 1px;border-style:hidden;border-width:0px;overflow:hidden;word-break:normal;height:70px;}
                 .station-cell {background-color:#000000;color:#000000;}
-                .pathway-cell {background-color:#FFCB2F;color:#FFCB2F;}
-                .printer-cell {background-color:#000000;color:#FFCB2F;}
-                .pillar-cell  {background-color:#000000;color:#FFCB2F;}
-                .user-cell    {background-color:#FFCB2F;color:#000000;}                            
-                .object-cell  {background-color:#424A56;color:#FFCB2F;}               
+                .pathway-cell {background-color:#FFCE00;color:#FFCE00;}
+                .printer-cell {background-color:#000000;color:#FFCE00;}
+                .pillar-cell  {background-color:#000000;color:#FFCE00;}
+                .user-cell    {background-color:#FFCE00;color:#000000;}                            
+                .object-cell  {background-color:#4A4F55;color:#FFCE00;}               
                                             
                 a:visited     {color: #000000;}
                 a:link        {color: #000000;}
@@ -84,87 +91,87 @@
                 </div>
             </div>
 
-            <!-- availColor =    #FFCB2F -->
+            <!-- availColor =    #FFCE00 -->
             <!-- noStatusColor = #595138 -->
             <!-- inUseColor =    #665113 -->    
 
             <!--table container-->
             <div class="container col-md-11">
                 <div class="row">
-                    <table class="table table-responsive table-condensed text-center">
+                    <table class="table-responsive table-condensed text-center">
                         <tr>
                             <td class="pathway-cell" colspan="26"></td>
                         </tr>
                         <tr>
                             <td class="pathway-cell"></td>
                             <td class="station-cell"><!--$a1-->1</td>
-                            <!-- <td class="station-cell"><FONT color="#FFCB2F">|</td> -->
+                            <!-- <td class="station-cell"><FONT color="#FFCE00">|</td> -->
                             <td class="station-cell"><!--$a3-->3</td>
                             <td class="pathway-cell"></td>
                             <td class="station-cell"><!--$b1-->1</td>
-                            <!-- <td class="station-cell"><FONT color="#FFCB2F">|</td> -->
+                            <!-- <td class="station-cell"><FONT color="#FFCE00">|</td> -->
                             <td class="station-cell"><!--$b4-->4</td>
                             <td class="pathway-cell"></td>
                             <td class="station-cell"><!--$c1-->1</td>
-                            <!-- <td class="station-cell"><FONT color="#FFCB2F">|</td> -->
+                            <!-- <td class="station-cell"><FONT color="#FFCE00">|</td> -->
                             <td class="station-cell"><!--$c4-->4</td>
                             <td class="pathway-cell"></td>
                             <td class="station-cell"><!--$d1-->1</td>
-                            <!-- <td class="station-cell"><FONT color="#FFCB2F">|</td> -->
+                            <!-- <td class="station-cell"><FONT color="#FFCE00">|</td> -->
                             <td class="station-cell"><!--$d4-->4</td>
                             <td class="pathway-cell"></td>
                             <td class="pathway-cell"></td>
                             <td class="station-cell"><!--$e1-->1</td>
-                            <!-- <td class="station-cell"><FONT color="#FFCB2F">|</td> -->
+                            <!-- <td class="station-cell"><FONT color="#FFCE00">|</td> -->
                             <td class="station-cell"><!--$e4-->4</td>
                             <td class="pathway-cell"></td>
                             <td class="station-cell"><!--$f1-->1</td>
-                            <!-- <td class="station-cell"><FONT color="#FFCB2F">|</td> -->
+                            <!-- <td class="station-cell"><FONT color="#FFCE00">|</td> -->
                             <td class="station-cell"><!--$f4-->4</td>
                             <td class="pathway-cell"></td>
                             <td class="station-cell"><!--$g1-->1</td>
-                            <!-- <td class="station-cell"><FONT color="#FFCB2F">|</td> -->
+                            <!-- <td class="station-cell"><FONT color="#FFCE00">|</td> -->
                             <td class="station-cell"><!--$g4-->4</td>
                             <td class="pathway-cell"></td>
                             <td class="station-cell"><!--$h1-->1</td>
-                            <!-- <td class="station-cell"><FONT color="#FFCB2F">|</td> -->
+                            <!-- <td class="station-cell"><FONT color="#FFCE00">|</td> -->
                             <td class="station-cell"><!--$h3-->3</td>
                             <td class="pathway-cell"></td>
                       </tr>
                       <tr>
                          <td class="pathway-cell"></td>
-                            <td class="station-cell"><FONT color="#FFCB2F">-</td>
+                            <td class="station-cell"><FONT color="#FFCE00">-</td>
                             <!-- <td class="station-cell">|</td> -->
                             <td class="station-cell"><!--$a2-->2</td>
                             <td class="pathway-cell"></td>
                             <td class="station-cell"><!--$b2-->2</td>
-                            <!-- <td class="station-cell"><FONT color="#FFCB2F">|</td> -->
+                            <!-- <td class="station-cell"><FONT color="#FFCE00">|</td> -->
                             <td class="station-cell"><!--$b3-->3</td>
                             <td class="pathway-cell"></td>
                             <td class="station-cell"><!--$c2-->2</td>
-                            <!-- <td class="station-cell"><FONT color="#FFCB2F">|</td> -->
+                            <!-- <td class="station-cell"><FONT color="#FFCE00">|</td> -->
                             <td class="station-cell"><!--$c3-->3</td>
                             <td class="pathway-cell"></td>
                             <td class="station-cell"><!--$d2-->2</td>
-                            <!-- <td class="station-cell"><FONT color="#FFCB2F">|</td> -->
+                            <!-- <td class="station-cell"><FONT color="#FFCE00">|</td> -->
                             <td class="station-cell"><!--$d3-->3</td>
                             <td class="pathway-cell"></td>
                             <td class="pathway-cell"></td>
                             <td class="station-cell"><!--$e2-->2</td>
-                            <!-- <td class="station-cell"><FONT color="#FFCB2F">|</td> -->
+                            <!-- <td class="station-cell"><FONT color="#FFCE00">|</td> -->
                             <td class="station-cell"><!--$e3-->3</td>
                             <td class="pathway-cell"></td>
                             <td class="station-cell"><!--$f2-->2</td>
-                            <!-- <td class="station-cell"><FONT color="#FFCB2F">|</td> -->
+                            <!-- <td class="station-cell"><FONT color="#FFCE00">|</td> -->
                             <td class="station-cell"><!--$f3-->3</td>
                             <td class="pathway-cell"></td>
                             <td class="station-cell"><!--$g2-->2</td>
-                            <!-- <td class="station-cell"><FONT color="#FFCB2F">|</td> -->
+                            <!-- <td class="station-cell"><FONT color="#FFCE00">|</td> -->
                             <td class="station-cell"><!--$g3-->3</td>
                             <td class="pathway-cell"></td>
                             <td class="station-cell"><!--$h2-->2</td>
                             <!-- <td class="station-cell">|</td> -->
-                            <td class="station-cell"><FONT color="#FFCB2F">-</td>
+                            <td class="station-cell"><FONT color="#FFCE00">-</td>
                             <td class="pathway-cell"></td>
                         </tr>
                         <tr>
