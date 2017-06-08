@@ -1,0 +1,149 @@
+<?php include("/var/www/html/LabTracker/Resources/PHP/header.php"); ?>
+
+        <div class="col-md-6">
+            <h1>Library North<small> LN2000</small></h1>
+            <h2>(These Computers Should Be Available)</h2>
+        </div>
+        <div class="container">
+            <h3 align="right "class="pull-right">$date</h3>
+        </div>
+        <hr>
+
+        <style type="text/css">
+            .table table{width:800px}
+
+            .tg                   {border-collapse:collapse;border-spacing:0;margin:0px auto;}
+            .tg td                {font-family:Arial, sans-serif;font-size:40px;padding:1px 1px;border-style:hidden;border-width:1px;overflow:hidden;word-break:normal;width:900/30%}
+            .tg .station-cell     {background-color:#000000;color:#000000;width:34px;height:180px;text-align:center; vertical-align:middle;}
+            .tg .pathway-cell     {background-color:#ffcb2f;color:#ffcb2f;width:34px;height:180px;text-align:center; vertical-align:middle;}
+            .tg .bottom-cell        {background-color:#ffcb2f;color:#000000;width:30px;height:100px;text-align:center; vertical-align:middle;}
+            
+            .button        {width:100%; background-color:#000000; border:0pt}
+            a:visited      {color: #FFCB2F;}
+            a:link         {color: #FFCB2F;}
+        </style>
+
+        <div class="info">
+            <h3>$numAvail of $numUnits available - Updated Every 10 minute(s) - Last Updated: $time</h3>
+        </div>
+
+        <!-- availColor =    #FFCB2F -->
+        <!-- noStatusColor = #595138 -->
+        <!-- inUseColor =    #665113 -->    
+
+       <table class="tg">
+          <tr>
+             <td class="pathway-cell"></td>
+             <td class="station-cell"><!--$a1-->A1</td>
+             <td class="station-cell"><FONT color="#FFCB2F">/</td>
+             <td class="station-cell"><!--$a3-->A3</td>
+             <td class="pathway-cell"></td>
+             <td class="station-cell"><!--$b1-->B1</td>
+             <td class="station-cell"><FONT color="#FFCB2F">/</td>
+             <td class="station-cell"><!--$b4-->B4</td>
+             <td class="pathway-cell"></td>
+             <td class="station-cell"><!--$c1-->C1</td>
+             <td class="station-cell"><FONT color="#FFCB2F">/</td>
+             <td class="station-cell"><!--$c4-->C4</td>
+             <td class="pathway-cell"></td>
+             <td class="station-cell"><!--$d1-->D1</td>
+             <td class="station-cell"><FONT color="#FFCB2F">/</td>
+             <td class="station-cell"><!--$d4-->D4</td>
+             <td class="pathway-cell"></td>
+             <td class="pathway-cell"></td>
+             <td class="station-cell"><!--$e1-->E1</td>
+             <td class="station-cell"><FONT color="#FFCB2F">/</td>
+             <td class="station-cell"><!--$e4-->E4</td>
+             <td class="pathway-cell"></td>
+             <td class="station-cell"><!--$f1-->F1</td>
+             <td class="station-cell"><FONT color="#FFCB2F">/</td>
+             <td class="station-cell"><!--$f4-->F4</td>
+             <td class="pathway-cell"></td>
+             <td class="station-cell"><!--$g1-->G1</td>
+             <td class="station-cell"><FONT color="#FFCB2F">/</td>
+             <td class="station-cell"><!--$g4-->G4</td>
+             <td class="pathway-cell"></td>
+             <td class="station-cell"><!--$h1-->H1</td>
+             <td class="station-cell"><FONT color="#FFCB2F">/</td>
+             <td class="station-cell"><!--$h3-->H3</td>
+             <td class="pathway-cell"></td>
+          </tr>
+          <tr>
+             <td class="pathway-cell"></td>
+             <td class="station-cell"><FONT color="#FFCB2F">-</td>
+             <td class="station-cell">/</td>
+             <td class="station-cell"><!--$a2-->A2</td>
+             <td class="pathway-cell"></td>
+             <td class="station-cell"><!--$b2-->B2</td>
+             <td class="station-cell"><FONT color="#FFCB2F">/</td>
+             <td class="station-cell"><!--$b3-->B3</td>
+             <td class="pathway-cell"></td>
+             <td class="station-cell"><!--$c2-->C2</td>
+             <td class="station-cell"><FONT color="#FFCB2F">/</td>
+             <td class="station-cell"><!--$c3-->C3</td>
+             <td class="pathway-cell"></td>
+             <td class="station-cell"><!--$d2-->D2</td>
+             <td class="station-cell"><FONT color="#FFCB2F">/</td>
+             <td class="station-cell"><!--$d3-->D3</td>
+             <td class="pathway-cell"></td>
+             <td class="pathway-cell"></td>
+             <td class="station-cell"><!--$e2-->E2</td>
+             <td class="station-cell"><FONT color="#FFCB2F">/</td>
+             <td class="station-cell"><!--$e3-->E3</td>
+             <td class="pathway-cell"></td>
+             <td class="station-cell"><!--$f2-->F2</td>
+             <td class="station-cell"><FONT color="#FFCB2F">/</td>
+             <td class="station-cell"><!--$f3-->F3</td>
+             <td class="pathway-cell"></td>
+             <td class="station-cell"><!--$g2-->G2</td>
+             <td class="station-cell"><FONT color="#FFCB2F">/</td>
+             <td class="station-cell"><!--$g3-->G3</td>
+             <td class="pathway-cell"></td>
+             <td class="station-cell"><!--$h2-->H2</td>
+             <td class="station-cell">/</td>
+             <td class="station-cell"><FONT color="#FFCB2F">-</td>
+             <td class="pathway-cell"></td>
+          </tr>
+          <tr>
+             <td class="bottom-cell"></td>
+             <td class="bottom-cell"></td>
+             <td class="bottom-cell"></td>
+             <td class="bottom-cell"></td>
+             <td class="bottom-cell"></td>
+             <td class="bottom-cell"></td>
+             <td class="bottom-cell"></td>
+             <td class="bottom-cell"></td>
+             <td class="bottom-cell"></td>
+             <td class="bottom-cell"></td>
+             <td class="bottom-cell"></td>
+             <td class="bottom-cell"></td>
+             <td class="bottom-cell"></td>
+             <td class="bottom-cell"></td>
+             <td class="bottom-cell"></td>
+             <td class="bottom-cell"></td>
+             <td class="bottom-cell"></td>
+             <td class="bottom-cell"></td>
+             <td class="bottom-cell"></td>
+             <td class="bottom-cell"></td>
+             <td class="bottom-cell"></td>
+             <td class="bottom-cell"></td>
+             <td class="bottom-cell"></td>
+             <td class="bottom-cell"></td>
+             <td class="bottom-cell"></td>
+             <td class="bottom-cell"></td>
+             <td class="bottom-cell"></td>
+             <td class="bottom-cell"></td>
+             <td class="bottom-cell"></td>
+             <td class="bottom-cell"></td>
+             <td class="bottom-cell"></td>
+             <td class="bottom-cell"></td>
+             <td class="bottom-cell"></td>
+             <td class="bottom-cell"></td>
+          </tr>
+       </table>
+
+        <div class="info">
+            <h3>$availSummary $inUseSummary $offSummary</h3>
+        </div>
+
+<?php include("/var/www/html/LabTracker/Resources/PHP/footer.php"); ?>

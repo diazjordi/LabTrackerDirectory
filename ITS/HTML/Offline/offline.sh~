@@ -1,0 +1,18 @@
+#!/bin/sh
+
+# LN1000
+cp -f /home/superlib/Desktop/LabTracker/Library-North-1st/html/templates/Offline/Lib-North-1st.html /var/www/html/LabTracker/LN1000
+
+# LN2000
+
+
+# LN3000
+
+
+# LN-A
+
+
+# LN-B
+
+
+echo "Done!"

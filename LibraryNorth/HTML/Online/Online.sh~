@@ -1,0 +1,8 @@
+#!/bin/sh
+
+# Lab Summary
+cp -f /home/superlib/Desktop/LabTracker/HTML/Templates/Online/LabSummary.php /var/www/html/LabTracker/Staff/LabSummary.php
+
+
+
+echo "Done!"

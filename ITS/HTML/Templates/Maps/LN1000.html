@@ -1,0 +1,127 @@
+<title>LN1000 - LT</title>
+<?php include("../../../Resources/PHP/header.php"); ?>
+
+		<div class="col-md-6">
+ 			<h1>Library North<small> LN1000</small></h1>
+ 			<h1>LN 1st Floor</h1>
+			<h3>These computers should be available</h3>
+		</div>
+		<div class="container">
+			<h3 align="right"class="pull-right">$date</h3>
+		</div>
+		<hr>
+
+		<style type="text/css">
+			.info 		   {text-align: center;}
+
+			table          {width:720px;border-collapse:collapse;border-spacing:0;margin:0px auto;}
+			td             {font-size:40px;padding:1px 1px;border-style:hidden;border-width:1px;overflow:hidden;word-break:normal;}
+			.station-cell  {background-color:#000000;color:#000000;width:80px;height:60px;text-align:center; vertical-align:middle;}
+			.pathway-cell  {background-color:#FFCB2F;color:#FFCB2F;width:80px;height:60px;text-align:center; vertical-align:middle;}
+			.scanner-cell  {background-color:#000000;color:#FFCB2F;width:80px;height:60px;text-align:center; vertical-align:middle;}
+			.printer-cell  {background-color:#000000;color:#FFCB2F;width:80px;height:60px;text-align:center; vertical-align:middle;}
+			.pillar-cell   {background-color:#000000;color:#FFCB2F;width:80px;height:60px;text-align:center; vertical-align:middle;}
+			.user-cell     {background-color:#FFCB2F;color:#000000;width:80px;height:60px;text-align:center; vertical-align:middle;}
+						
+			a:visited      {color: #000000;}
+			a:link         {color: #000000;}
+		</style>
+		
+		<div class="info">
+			<h3>$numAvail of $numUnits available - Updated Every 7 minute(s) - Last Updated: $time</h3>
+		</div>
+
+		<!-- availColor =    #FFCB2F -->
+		<!-- noStatusColor = #595138 -->
+		<!-- inUseColor =    #665113 -->	
+
+		<table align="center">
+			<tr>
+				<td class="pathway-cell"></td>
+				<td class="pathway-cell"></td>
+			    <td class="pathway-cell"></td>
+			    <td class="pathway-cell"></td>
+			    <td class="pathway-cell"></td>
+			    <td class="pathway-cell"></td>
+			    <td class="pathway-cell"></td>
+			    <td class="pathway-cell"></td>
+			    <td class="pathway-cell"></td>
+			</tr>
+			<tr>
+				<td class="pathway-cell"></td>
+			    <td class="printer-cell" colspan="2">PRINT</td>
+			    <td class="pillar-cell"></td>
+			    <td class="scanner-cell" colspan="2">SCAN</td>
+			    <td class="scanner-cell" colspan="2">SCAN</td>
+			    <td class="pathway-cell"></td>
+			</tr>
+			<tr>
+				<td class="pathway-cell"></td>
+			    <td class="printer-cell" colspan="2">PRINT</td>
+			    <td class="pillar-cell"></td>
+			    <td class="scanner-cell" colspan="2">SCAN</td>
+			    <td class="scanner-cell" colspan="2">SCAN</td>
+			    <td class="pathway-cell"></td>
+			</tr>
+			<tr>
+				<td class="pathway-cell"></td>
+				<td class="pathway-cell"></td>
+			    <td class="pathway-cell"></td>
+			    <td class="pathway-cell"></td>
+			    <td class="pathway-cell"></td>
+			    <td class="pathway-cell"></td>
+			    <td class="pathway-cell"></td>
+			    <td class="pathway-cell"></td>
+			    <td class="pathway-cell"></td>
+			</tr>
+			<tr>
+				<td class="pathway-cell"></td>
+				<td class="pathway-cell"></td>
+			    <td class="pathway-cell"></td>
+			    <td class="pathway-cell"></td>
+			    <td class="pathway-cell"></td>
+			    <td class="pathway-cell"></td>
+			    <td class="pathway-cell"></td>
+			    <td class="pathway-cell"></td>
+			    <td class="pathway-cell"></td>
+			</tr>
+			<tr>
+				<td class="pathway-cell"></td>
+			    <td class="station-cell"><!--$b1-->B1</td>
+			    <td class="station-cell"><!--$b2-->B2</td>
+			    <td class="pillar-cell"></td>
+			    <td class="station-cell"><!--$b3-->B3</td>
+			    <td class="station-cell"><!--$b4-->B4</td>
+			    <td class="station-cell"><!--$b5-->B5</td>
+			    <td class="station-cell"><!--$b6-->B6</td>
+			    <td class="pathway-cell"></td>
+			</tr>
+			<tr>
+				<td class="pathway-cell"></td>
+			    <td class="station-cell"><!--$a1-->A1</td>
+			    <td class="station-cell"><!--$a2-->A2</td>
+			    <td class="pillar-cell"></td>
+			    <td class="station-cell"><!--$a3-->A3</td>
+			    <td class="station-cell"><!--$a4-->A4</td>
+			    <td class="station-cell"><!--$a5-->A5</td>
+			    <td class="station-cell"><!--$a6-->A6</td>
+			    <td class="pathway-cell"></td>
+			</tr>
+			<tr>
+				<td class="pathway-cell"></td>
+				<td class="pathway-cell"></td>
+			    <td class="pathway-cell"></td>
+			    <td class="pathway-cell"></td>
+			    <td class="pathway-cell"></td>
+			    <td class="pathway-cell"></td>
+			    <td class="pathway-cell"></td>
+			    <td class="pathway-cell"></td>
+			    <td class="pathway-cell"></td>
+			</tr>
+		</table>
+
+		<div class="info">
+			<h3>$availSummary $inUseSummary $offSummary</h3>
+		</div>
+
+<?php include("../../../Resources/PHP/footer.php"); ?>

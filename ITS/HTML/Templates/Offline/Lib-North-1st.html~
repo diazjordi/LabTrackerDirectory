@@ -1,0 +1,224 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="refresh" content="10" ;="" url="http://10.84.89.162/">
+		<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+		<meta http-equiv="Pragma" content="no-cache" />
+		<meta http-equiv="Expires" content="0" />
+		<title>LabTracker</title>		
+ 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+	</head>
+	
+	<body>
+		<div class="col-md-6">
+ 			<h1>Library North<small> 1st floor</small></h1>
+		</div>
+		<div class="container">
+			<h3 align="right "class="pull-right">$date</h3>
+		</div>
+		<hr>
+
+		<style type="text/css">
+			.tg  {border-collapse:collapse;border-spacing:0;margin:0px auto;}
+			.tg td{font-family:Arial, sans-serif;font-size:40px;padding:1px 1px;border-style:hidden;border-width:1px;overflow:hidden;word-break:normal;width:1080/12%}
+			.tg .station-cell{background-color:#000000;color:#000000;width:80px;height:60px;text-align:center; 
+    vertical-align:middle;}
+			.tg .pathway-cell{background-color:#ffcb2f;color:#ffcb2f;width:80px;height:60px;text-align:center; 
+    vertical-align:middle;}
+			.tg .user-cell   {background-color:#ffcb2f;color:#000000;width:80px;height:60px;text-align:center; 
+    vertical-align:middle;}
+			.table table{width:1080px;height:720px}
+			.button {width:100%;background-color:#000000;border:0pt}
+			a:visited {color: #FFCB2F;}
+			a:link {color: #FFCB2F;}
+		</style>
+		
+		<!--
+		<div class="container">
+			<h2 class="pull-left">CLOSED - Lab Tracker will resume during normal operational hours</h2>
+		</div>
+		-->
+
+		<div class="container">
+			<h2 class="pull-left">CLOSED</h2>
+		</div>
+		<div class="container">
+			<h2 class="pull-left" id="date"></h2>
+		</div>
+		<div class="container">
+			<h2 class="pull-left" id="time"></h2>
+		</div>
+
+		<script>
+			var d = new Date();
+			var month = d.getMonth();
+			var day = d.getDate()
+			var year = d.getUTCFullYear();
+			    
+			var date = month + "-" + day + "-" + year;
+			var time = d.toTimeString();
+			    
+			document.getElementById("date").innerHTML = date;
+			document.getElementById("time").innerHTML = time;
+		</script>
+
+
+		<!--
+		Available color:    #ffcb2f
+		In Use color:		#000000
+		Out of Order color: #665113 
+		CLOSED color:   #332909
+		-->
+
+		<table class="tg" align="center" style="1000px">
+			<tr>
+			    <td class="pathway-cell"></td>
+			    <td class="pathway-cell"></td>
+			    <td class="pathway-cell"></td>
+			    <td class="pathway-cell"></td>
+			    <td class="pathway-cell"></td>
+			    <td class="pathway-cell"></td>
+			    <td class="pathway-cell"></td>
+			    <td class="pathway-cell"></td>
+			    <td class="pathway-cell"></td>
+			    <td class="pathway-cell"></td>
+			    <td class="pathway-cell"></td>
+			    <td class="pathway-cell"></td>
+		  	</tr>
+		  	<tr>
+			    <td class="station-cell"><FONT COLOR="#332909">G1</td>
+			    <td class="station-cell"><FONT COLOR="#332909">G8</td>
+			    <td class="pathway-cell"></td>
+			    <td class="station-cell"><FONT COLOR="#332909">F1</td>
+			    <td class="station-cell"><FONT COLOR="#332909">F2</td>
+			    <td class="station-cell"><FONT COLOR="#332909">F3</td>
+			    <td class="station-cell"><FONT COLOR="#332909">F4</td>
+			    <td class="pathway-cell"></td>
+			    <td class="station-cell"></td>
+			    <td class="station-cell"></td>
+			    <td class="station-cell"></td>
+			    <td class="station-cell"></td>
+			</tr>
+			<tr>
+			    <td class="station-cell"><FONT COLOR="#332909">G2</td>
+			    <td class="station-cell"><FONT COLOR="#332909">G7</td>
+			    <td class="pathway-cell"></td>
+			    <td class="station-cell"><FONT COLOR="#332909">E1</td>
+			    <td class="station-cell"><FONT COLOR="#332909">E2</td>
+			    <td class="station-cell"><FONT COLOR="#332909">E3</td>
+			    <td class="station-cell"><FONT COLOR="#332909">E4</td>
+			    <td class="pathway-cell"></td>
+			    <td class="station-cell"><FONT COLOR="#332909">E5</td>
+			    <td class="station-cell"><FONT COLOR="#332909">E6</td>
+			    <td class="station-cell"><FONT COLOR="#332909">E7</td>
+			    <td class="station-cell"><FONT COLOR="#332909">E8</td>
+			</tr>
+			<tr>
+			    <td class="station-cell"><FONT COLOR="#332909">G3</td>
+			    <td class="station-cell"><FONT COLOR="#332909">G6</td>
+			    <td class="pathway-cell"></td>
+			    <td class="pathway-cell"></td>
+			    <td class="pathway-cell"></td>
+			    <td class="pathway-cell"></td>
+			    <td class="pathway-cell"></td>
+			    <td class="pathway-cell"></td>
+			    <td class="pathway-cell"></td>
+			    <td class="pathway-cell"></td>
+			    <td class="pathway-cell"></td>
+			    <td class="pathway-cell"></td>
+			</tr>
+			<tr>
+			    <td class="station-cell"><FONT COLOR="#332909">G4</td>
+			    <td class="station-cell"><FONT COLOR="#332909">G5</td>
+			    <td class="pathway-cell"></td>
+			    <td class="station-cell"><FONT COLOR="#332909">D1</td>
+			    <td class="station-cell"><FONT COLOR="#332909">D2<br></td>
+			    <td class="station-cell"><FONT COLOR="#332909">D3</td>
+			    <td class="station-cell"><FONT COLOR="#332909">D4</td>
+			    <td class="pathway-cell"></td>
+			    <td class="station-cell"><FONT COLOR="#332909">D5</td>
+			    <td class="station-cell"><FONT COLOR="#332909">D6</td>
+			    <td class="station-cell"><FONT COLOR="#332909">D7</td>
+			    <td class="station-cell"><FONT COLOR="#332909">D8</td>
+			</tr>
+			<tr>
+			    <td class="pathway-cell"></td>
+			    <td class="pathway-cell"></td>
+			    <td class="pathway-cell"></td>
+			    <td class="station-cell"><FONT COLOR="#332909">C1</td>
+			    <td class="station-cell"><FONT COLOR="#332909">C2</td>
+			    <td class="station-cell"><FONT COLOR="#332909">C3</td>
+			    <td class="station-cell"><FONT COLOR="#332909">C4</td>
+			    <td class="pathway-cell"></td>
+			    <td class="station-cell"><FONT COLOR="#332909">C5</td>
+			    <td class="station-cell"><FONT COLOR="#332909">C6</td>
+			    <td class="station-cell"><FONT COLOR="#332909">C7</td>
+			    <td class="station-cell"><FONT COLOR="#332909">C8</td>
+			</tr>
+			<tr>
+			    <td class="pathway-cell"></td>
+			    <td class="pathway-cell"></td>
+			    <td class="pathway-cell"></td>
+			    <td class="pathway-cell"></td>
+			    <td class="pathway-cell"></td>
+			    <td class="pathway-cell"></td>
+			    <td class="pathway-cell"></td>
+			    <td class="pathway-cell"></td>
+			    <td class="pathway-cell"></td>
+			    <td class="pathway-cell"></td>
+			    <td class="pathway-cell"></td>
+			    <td class="pathway-cell"></td>
+			</tr>
+			<tr>
+			    <td class="pathway-cell"></td>
+			    <td class="pathway-cell"></td>
+			    <td class="pathway-cell"></td>
+			    <td class="station-cell"><FONT COLOR="#332909">B1</td>
+			    <td class="station-cell"><FONT COLOR="#332909">B2</td>
+			    <td class="station-cell"><FONT COLOR="#332909">B3</td>
+			    <td class="station-cell"><FONT COLOR="#332909">B4</td>
+			    <td class="pathway-cell"></td>
+			    <td class="station-cell"><FONT COLOR="#332909">B5</td>
+			    <td class="station-cell"><FONT COLOR="#332909">B6</td>
+			    <td class="station-cell"><FONT COLOR="#332909">B7</td>
+			    <td class="station-cell"><FONT COLOR="#332909">B8</td>
+			</tr>
+			<tr>
+			    <td class="pathway-cell"></td>
+			    <td class="pathway-cell"></td>
+			    <td class="pathway-cell"></td>
+			    <td class="station-cell"><FONT COLOR="#332909">A1</td>
+			    <td class="station-cell"><FONT COLOR="#332909">A2</td>
+			    <td class="station-cell"><FONT COLOR="#332909">A3</td>
+			    <td class="station-cell"><FONT COLOR="#332909">A4</td>
+			    <td class="pathway-cell"></td>
+			    <td class="station-cell"><FONT COLOR="#332909">A5</td>
+			    <td class="station-cell"><FONT COLOR="#332909">A6</td>
+			    <td class="station-cell"><FONT COLOR="#332909">A7</td>
+			    <td class="station-cell"><FONT COLOR="#332909">A8</td>
+			</tr>
+			<tr>
+			    <td class="pathway-cell"></td>
+			    <td class="pathway-cell"></td>
+			    <td class="pathway-cell"></td>
+			    <td class="pathway-cell"></td>
+			    <td class="pathway-cell"></td>
+			    <td class="pathway-cell"></td>
+			    <td class="pathway-cell"></td>
+			    <td class="user-cell" align="center">X</td>
+			    <td class="pathway-cell"></td>
+			    <td class="pathway-cell"></td>
+			    <td class="pathway-cell"></td>
+				<td class="pathway-cell"></td>
+			</tr>
+		</table>
+		<hr>
+		<div id="footer">
+			<p>
+				LabTracker - CSULA Library - J.Diaz © 2015 
+			</p>
+		</div>
+	
+	</body>
+
+</html>

@@ -1,0 +1,136 @@
+<title>LabTracker Offline</title>
+<?php include("../../../Resources/PHP/header.php"); ?>
+
+		<div class="col-md-6">
+ 			<h1>Library North</h1>
+			<h3></h3>
+		</div>
+		<div class="container">
+			<h3 align="right" id="date" class="pull-right"></h3>
+		</div>
+		<hr>
+
+		<style type="text/css">
+			.info 		   {text-align: center;}
+
+			table          {width:720px;border-collapse:collapse;border-spacing:0;margin:0px auto;}
+			td             {font-size:40px;padding:1px 1px;border-style:hidden;border-width:1px;overflow:hidden;word-break:normal;}
+			.station-cell  {background-color:#000000;color:#000000;width:80px;height:60px;text-align:center; vertical-align:middle;}
+			.pathway-cell  {background-color:#FFCB2F;color:#FFCB2F;width:80px;height:60px;text-align:center; vertical-align:middle;}
+			.scanner-cell  {background-color:#000000;color:#FFCB2F;width:80px;height:60px;text-align:center; vertical-align:middle;}
+			.printer-cell  {background-color:#000000;color:#FFCB2F;width:80px;height:60px;text-align:center; vertical-align:middle;}
+			.pillar-cell   {background-color:#000000;color:#FFCB2F;width:80px;height:60px;text-align:center; vertical-align:middle;}
+			.user-cell     {background-color:#FFCB2F;color:#000000;width:80px;height:60px;text-align:center; vertical-align:middle;}
+						
+			a:visited      {color: #000000;}
+			a:link         {color: #000000;}
+		</style>
+
+		<script>
+			var d = new Date();
+			var month = d.getMonth() + 1;
+			var day = d.getDate();
+			var year = d.getUTCFullYear();
+			var date = month + "-" + day + "-" + year;
+			var time = d.toTimeString();
+			document.getElementById("date").innerHTML = date;
+		</script>
+		
+		<div class="info">
+			<h3>LabTracker Currently Offline</h3>
+		</div>
+
+		<!-- availColor =    #FFCB2F -->
+		<!-- noStatusColor = #595138 -->
+		<!-- inUseColor =    #665113 -->	
+
+		<table align="center">
+			<tr>
+				<td class="pathway-cell"></td>
+				<td class="pathway-cell"></td>
+			    <td class="pathway-cell"></td>
+			    <td class="pathway-cell"></td>
+			    <td class="pathway-cell"></td>
+			    <td class="pathway-cell"></td>
+			    <td class="pathway-cell"></td>
+			    <td class="pathway-cell"></td>
+			    <td class="pathway-cell"></td>
+			</tr>
+			<tr>
+				<td class="pathway-cell"></td>
+			    <td class="printer-cell" colspan="2"></td>
+			    <td class="pillar-cell"></td>
+			    <td class="scanner-cell" colspan="2"></td>
+			    <td class="scanner-cell" colspan="2"></td>
+			    <td class="pathway-cell"></td>
+			</tr>
+			<tr>
+				<td class="pathway-cell"></td>
+			    <td class="printer-cell" colspan="2"></td>
+			    <td class="pillar-cell"></td>
+			    <td class="scanner-cell" colspan="2"></td>
+			    <td class="scanner-cell" colspan="2"></td>
+			    <td class="pathway-cell"></td>
+			</tr>
+			<tr>
+				<td class="pathway-cell"></td>
+				<td class="pathway-cell"></td>
+			    <td class="pathway-cell"></td>
+			    <td class="pathway-cell"></td>
+			    <td class="pathway-cell"></td>
+			    <td class="pathway-cell"></td>
+			    <td class="pathway-cell"></td>
+			    <td class="pathway-cell"></td>
+			    <td class="pathway-cell"></td>
+			</tr>
+			<tr>
+				<td class="pathway-cell"></td>
+				<td class="pathway-cell"></td>
+			    <td class="pathway-cell"></td>
+			    <td class="pathway-cell"></td>
+			    <td class="pathway-cell"></td>
+			    <td class="pathway-cell"></td>
+			    <td class="pathway-cell"></td>
+			    <td class="pathway-cell"></td>
+			    <td class="pathway-cell"></td>
+			</tr>
+			<tr>
+				<td class="pathway-cell"></td>
+			    <td class="station-cell"><!--$f3-->F3</td>
+			    <td class="station-cell"><!--$f4-->F4</td>
+			    <td class="pillar-cell"></td>
+			    <td class="station-cell"><!--$a5-->A5</td>
+			    <td class="station-cell"><!--$a6-->A6</td>
+			    <td class="station-cell"><!--$a7-->A7</td>
+			    <td class="station-cell"><!--$a8-->A8</td>
+			    <td class="pathway-cell"></td>
+			</tr>
+			<tr>
+				<td class="pathway-cell"></td>
+			    <td class="station-cell"><!--$f1-->F1</td>
+			    <td class="station-cell"><!--$f3-->F2</td>
+			    <td class="pillar-cell"></td>
+			    <td class="station-cell"><!--$a1-->A1</td>
+			    <td class="station-cell"><!--$a2-->A2</td>
+			    <td class="station-cell"><!--$a3-->A3</td>
+			    <td class="station-cell"><!--$a4-->A4</td>
+			    <td class="pathway-cell"></td>
+			</tr>
+			<tr>
+				<td class="pathway-cell"></td>
+				<td class="pathway-cell"></td>
+			    <td class="pathway-cell"></td>
+			    <td class="pathway-cell"></td>
+			    <td class="pathway-cell"></td>
+			    <td class="pathway-cell"></td>
+			    <td class="pathway-cell"></td>
+			    <td class="pathway-cell"></td>
+			    <td class="pathway-cell"></td>
+			</tr>
+		</table>
+
+		<div class="info">
+			<h3>LabTracker Currently Offline</h3>
+		</div>
+
+<?php include("../../../Resources/PHP/footer.php"); ?>

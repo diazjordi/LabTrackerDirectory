@@ -1,0 +1,202 @@
+<?php include("/var/www/html/LabTracker/Resources/PHP/header.php"); ?>
+
+        <div class="col-md-6">
+            <h1>Library North<small> LN3016</small></h1>
+            <h2>(These Computers Should Be Available)</h2>
+        </div>
+        <div class="container">
+            <h3 align="right "class="pull-right">$date</h3>
+        </div>
+        <hr>
+
+        <style type="text/css">
+            .table {width: 80%;}
+
+            .tg               {border-collapse:collapse;border-spacing:0;margin:0px auto;}
+            .tg               {font-family:Arial, sans-serif;font-size:40px;padding:1px 1px;border-style:hidden;border-width:1px;overflow:hidden;word-break:normal;width:1000px;}
+            .tg .station-cell {background-color:#000000;color:#000000;width:80px;height:60px;text-align:center; vertical-align:middle;}
+            .tg .scanner-cell {background-color:#000000;color:#ffcb2f;width:80px;height:60px;text-align:center; vertical-align:middle;}
+            .tg .printer-cell {background-color:#000000;color:#ffcb2f;width:80px;height:60px;text-align:center; vertical-align:middle;}
+            .tg .pillar-cell  {background-color:#000000;color:#ffcb2f;width:80px;height:60px;text-align:center; vertical-align:middle;}
+            .tg .pathway-cell {background-color:#ffcb2f;color:#ffcb2f;width:80px;height:60px;text-align:center; vertical-align:middle;}
+            .tg .user-cell    {background-color:#ffcb2f;color:#000000;width:80px;height:60px;text-align:center; vertical-align:middle;}
+            
+            .button        {width:100%; background-color:#000000; border:0pt}
+            a:visited      {color: #000000;}
+            a:link         {color: #000000;}
+        </style>
+        
+        <div class="info">
+            <h3>$numAvail of $numUnits available - Updated Every 10 minute(s) - Last Updated: $time</h3>
+        </div>
+
+        <!-- availColor =    #FFCB2F -->
+        <!-- noStatusColor = #595138 -->
+        <!-- inUseColor =    #665113 -->       
+
+        <table class="tg" align="center">
+            <tr>
+                <td class="pathway-cell"></td>
+                <td class="pathway-cell"></td>
+                <td class="pathway-cell"></td>
+                <td class="pathway-cell"></td>
+                <td class="pathway-cell"></td>
+                <td class="pathway-cell"></td>
+                <td class="pathway-cell"></td>
+                <td class="pathway-cell"></td>
+                <td class="pathway-cell"></td>
+                <td class="pathway-cell"></td>
+                <td class="pathway-cell"></td>
+                <td class="pathway-cell"></td>
+                <td class="pathway-cell"></td>
+                <td class="pathway-cell"></td>
+                <td class="pathway-cell"></td>
+                <td class="pathway-cell"></td>
+                <td class="pathway-cell"></td>
+                <td class="printer-cell" rowspan="2">PRINT</td>
+            </tr>
+            <tr>
+                <td class="pathway-cell"></td>
+                <td class="pathway-cell"></td>
+                <td class="pathway-cell"></td>
+                <td class="pathway-cell"></td>
+                <td class="pathway-cell"></td>
+                <td class="pathway-cell"></td>
+                <td class="pathway-cell"></td>
+                <td class="pathway-cell"></td>
+                <td class="pathway-cell"></td>
+                <td class="pathway-cell"></td>          
+                <td class="printer-cell" colspan="2">PRINT</td>
+                <td class="pillar-cell">X</td>
+                <td class="printer-cell" colspan="2">PRINT</td>
+                <td class="pathway-cell"></td>
+                <td class="pathway-cell"></td>
+            </tr>
+            <tr>
+                <td class="pathway-cell"></td>
+                <td class="pathway-cell"></td>
+                <td class="pathway-cell"></td>
+                <td class="pathway-cell"></td>
+                <td class="pathway-cell"></td>
+                <td class="pathway-cell"></td>
+                <td class="pathway-cell"></td>
+                <td class="pathway-cell"></td>
+                <td class="pathway-cell"></td>
+                <td class="pathway-cell"></td>
+                <td class="pathway-cell"></td>
+                <td class="pathway-cell"></td>
+                <td class="pathway-cell"></td>
+                <td class="pathway-cell"></td>
+                <td class="pathway-cell"></td>
+                <td class="pathway-cell"></td>
+                <td class="pathway-cell"></td>
+                <td class="pathway-cell"></td>
+            </tr>
+            <tr>
+                <td class="pathway-cell"></td>
+                <td class="pathway-cell"></td>
+                <td class="pathway-cell"></td>
+                <td class="pathway-cell"></td>
+                <td class="pathway-cell"></td>
+                <td class="pathway-cell"></td>
+                <td class="pathway-cell"></td>
+                <td class="pathway-cell"></td>
+                <td class="pathway-cell"></td>
+                <td class="pathway-cell"></td>
+                <td class="pathway-cell"></td>
+                <td class="pathway-cell"></td>
+                <td class="pathway-cell"></td>
+                <td class="pathway-cell"></td>
+                <td class="pathway-cell"></td>
+                <td class="pathway-cell"></td>
+                <td class="pathway-cell"></td>
+                <td class="station-cell"><!--$g1-->G1</td>
+            </tr>
+            <tr>
+                <td class="pathway-cell"></td>
+                <td class="station-cell"><!--$b1-->B1</td>
+                <td class="station-cell"><!--b5-->B5</td>
+                <td class="pathway-cell"></td>
+                <td class="pathway-cell"></td>
+                <td class="station-cell"><!--$c1-->C1</td>
+                <td class="station-cell"><!--$c5-->C5</td>
+                <td class="pathway-cell"></td>
+                <td class="pathway-cell"></td>
+                <td class="station-cell"><!--$d1-->D1</td>
+                <td class="station-cell"><!--$d5-->D5</td>
+                <td class="pathway-cell"></td>
+                <td class="pathway-cell"></td>
+                <td class="station-cell"><!--$e1-->E1</td>
+                <td class="station-cell"><!--$e5-->E5</td>
+                <td class="pathway-cell"></td>
+                <td class="pathway-cell"></td>
+                <td class="station-cell"><!--$g2-->G2</td>
+            </tr>
+            <tr>
+                <td class="pathway-cell"></td>
+                <td class="station-cell"><!--$b2-->B2</td>
+                <td class="station-cell"><!--b6-->B6</td>
+                <td class="pathway-cell"></td>
+                <td class="pathway-cell"></td>
+                <td class="station-cell"><!--$c2-->C2</td>
+                <td class="station-cell"><!--$c6-->C6</td>
+                <td class="pathway-cell"></td>
+                <td class="pathway-cell"></td>
+                <td class="station-cell"><!--$d2-->D2</td>
+                <td class="station-cell"><!--$d6-->D6</td>
+                <td class="pathway-cell"></td>
+                <td class="pathway-cell"></td>
+                <td class="station-cell"><!--$e2-->E2</td>
+                <td class="station-cell"><!--$e6-->E6</td>
+                <td class="pathway-cell"></td>
+                <td class="pathway-cell"></td>
+                <td class="station-cell"><!--$g3-->G3</td>
+            </tr>
+            <tr>
+                <td class="pathway-cell"></td>
+                <td class="station-cell"><!--$b3-->B3</td>
+                <td class="station-cell"><!--b7-->B7</td>
+                <td class="pathway-cell"></td>
+                <td class="pathway-cell"></td>
+                <td class="station-cell"><!--$c3-->C3</td>
+                <td class="station-cell"><!--$c7-->C7</td>
+                <td class="pathway-cell"></td>
+                <td class="pathway-cell"></td>
+                <td class="station-cell"><!--$d3-->D3</td>
+                <td class="station-cell"><!--$d7-->D7</td>
+                <td class="pathway-cell"></td>
+                <td class="pathway-cell"></td>
+                <td class="station-cell"><!--$e3-->E3</td>
+                <td class="station-cell"><!--$e7-->E7</td>
+                <td class="pathway-cell"></td>
+                <td class="pathway-cell"></td>
+                <td class="station-cell"><!--$g4-->G4</td>
+            </tr>
+            <tr>
+                <td class="pathway-cell"></td>
+                <td class="station-cell"><!--$b4-->B4</td>
+                <td class="station-cell"><!--b8-->B8</td>
+                <td class="pathway-cell"></td>
+                <td class="pathway-cell"></td>
+                <td class="station-cell"><!--$c4-->C4</td>
+                <td class="station-cell"><!--$c8-->C8</td>
+                <td class="pathway-cell"></td>
+                <td class="pathway-cell"></td>
+                <td class="station-cell"><!--$d4-->D4</td>
+                <td class="station-cell"><!--$d8-->D8</td>
+                <td class="pathway-cell"></td>
+                <td class="pathway-cell"></td>
+                <td class="station-cell"><!--$e4-->E4</td>
+                <td class="station-cell"><!--$e8-->E8</td>
+                <td class="pathway-cell"></td>
+                <td class="pathway-cell"></td>
+                <td class="pathway-cell"></td>
+            </tr>
+        </table>
+
+        
+        <div class="info">
+            <h3>$availSummary $inUseSummary $offSummary</h3>
+        </div>
+
+<?php include("/var/www/html/LabTracker/Resources/PHP/footer.php"); ?>

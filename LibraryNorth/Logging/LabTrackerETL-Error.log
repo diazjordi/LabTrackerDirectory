@@ -1,0 +1,81 @@
+[ERROR] 2017-06-07 10:45:11.211 [main] LabTrackerETL - java.sql.SQLException: Access denied for user 'labtracker_library_north'@'10.82.244.203' (using password: YES)
+[ERROR] 2017-06-07 23:28:08.699 [main] LabTrackerETL - Failed : HTTP error code : 500
+[ERROR] 2017-06-07 23:28:08.724 [main] LabTrackerETL - java.lang.RuntimeException: Failed : HTTP error code : 500
+[ERROR] 2017-06-07 23:31:59.775 [main] LabTrackerETL - Failed : HTTP error code : 500
+[ERROR] 2017-06-07 23:31:59.775 [main] LabTrackerETL - java.lang.RuntimeException: Failed : HTTP error code : 500
+[ERROR] 2017-06-07 23:34:08.783 [main] LabTrackerETL - Failed : HTTP error code : 500
+[ERROR] 2017-06-07 23:34:08.784 [main] LabTrackerETL - java.lang.RuntimeException: Failed : HTTP error code : 500
+[ERROR] 2017-06-07 23:40:09.442 [main] LabTrackerETL - Failed : HTTP error code : 500
+[ERROR] 2017-06-07 23:40:09.442 [main] LabTrackerETL - java.lang.RuntimeException: Failed : HTTP error code : 500
+[ERROR] 2017-06-07 23:46:23.989 [main] LabTrackerETL - Failed : HTTP error code : 500
+[ERROR] 2017-06-07 23:46:23.990 [main] LabTrackerETL - java.lang.RuntimeException: Failed : HTTP error code : 500
+[ERROR] 2017-06-07 23:52:16.508 [main] LabTrackerETL - Failed : HTTP error code : 500
+[ERROR] 2017-06-07 23:52:16.508 [main] LabTrackerETL - java.lang.RuntimeException: Failed : HTTP error code : 500
+[ERROR] 2017-06-07 23:56:09.844 [main] LabTrackerETL - Failed : HTTP error code : 500
+[ERROR] 2017-06-07 23:56:09.845 [main] LabTrackerETL - java.lang.RuntimeException: Failed : HTTP error code : 500
+[ERROR] 2017-06-07 23:58:22.518 [main] LabTrackerETL - Failed : HTTP error code : 500
+[ERROR] 2017-06-07 23:58:22.518 [main] LabTrackerETL - java.lang.RuntimeException: Failed : HTTP error code : 500
+[ERROR] 2017-06-08 00:02:16.051 [main] LabTrackerETL - Failed : HTTP error code : 500
+[ERROR] 2017-06-08 00:02:16.052 [main] LabTrackerETL - java.lang.RuntimeException: Failed : HTTP error code : 500
+[ERROR] 2017-06-08 00:10:19.015 [main] LabTrackerETL - Failed : HTTP error code : 500
+[ERROR] 2017-06-08 00:10:19.016 [main] LabTrackerETL - java.lang.RuntimeException: Failed : HTTP error code : 500
+[ERROR] 2017-06-08 00:14:10.378 [main] LabTrackerETL - Failed : HTTP error code : 500
+[ERROR] 2017-06-08 00:14:10.378 [main] LabTrackerETL - java.lang.RuntimeException: Failed : HTTP error code : 500
+[ERROR] 2017-06-08 00:16:11.397 [main] LabTrackerETL - Failed : HTTP error code : 500
+[ERROR] 2017-06-08 00:16:11.397 [main] LabTrackerETL - java.lang.RuntimeException: Failed : HTTP error code : 500
+[ERROR] 2017-06-08 00:23:00.015 [main] LabTrackerETL - Failed : HTTP error code : 500
+[ERROR] 2017-06-08 00:23:00.016 [main] LabTrackerETL - java.lang.RuntimeException: Failed : HTTP error code : 500
+[ERROR] 2017-06-08 00:28:27.372 [main] LabTrackerETL - Failed : HTTP error code : 500
+[ERROR] 2017-06-08 00:28:27.373 [main] LabTrackerETL - java.lang.RuntimeException: Failed : HTTP error code : 500
+[ERROR] 2017-06-08 00:32:23.028 [main] LabTrackerETL - Failed : HTTP error code : 500
+[ERROR] 2017-06-08 00:32:23.029 [main] LabTrackerETL - java.lang.RuntimeException: Failed : HTTP error code : 500
+[ERROR] 2017-06-08 00:35:00.720 [main] LabTrackerETL - Failed : HTTP error code : 500
+[ERROR] 2017-06-08 00:35:00.720 [main] LabTrackerETL - java.lang.RuntimeException: Failed : HTTP error code : 500
+[ERROR] 2017-06-08 00:38:55.777 [main] LabTrackerETL - Failed : HTTP error code : 500
+[ERROR] 2017-06-08 00:38:55.778 [main] LabTrackerETL - java.lang.RuntimeException: Failed : HTTP error code : 500
+[ERROR] 2017-06-08 00:46:34.159 [main] LabTrackerETL - Failed : HTTP error code : 500
+[ERROR] 2017-06-08 00:46:34.160 [main] LabTrackerETL - java.lang.RuntimeException: Failed : HTTP error code : 500
+[ERROR] 2017-06-08 00:50:26.977 [main] LabTrackerETL - Failed : HTTP error code : 500
+[ERROR] 2017-06-08 00:50:26.977 [main] LabTrackerETL - java.lang.RuntimeException: Failed : HTTP error code : 500
+[ERROR] 2017-06-08 00:52:55.935 [main] LabTrackerETL - Failed : HTTP error code : 500
+[ERROR] 2017-06-08 00:52:55.936 [main] LabTrackerETL - java.lang.RuntimeException: Failed : HTTP error code : 500
+[ERROR] 2017-06-08 01:00:32.223 [main] LabTrackerETL - Failed : HTTP error code : 500
+[ERROR] 2017-06-08 01:00:32.224 [main] LabTrackerETL - java.lang.RuntimeException: Failed : HTTP error code : 500
+[ERROR] 2017-06-08 01:06:14.614 [main] LabTrackerETL - Failed : HTTP error code : 500
+[ERROR] 2017-06-08 01:06:14.615 [main] LabTrackerETL - java.lang.RuntimeException: Failed : HTTP error code : 500
+[ERROR] 2017-06-08 01:10:09.705 [main] LabTrackerETL - Failed : HTTP error code : 500
+[ERROR] 2017-06-08 01:10:09.705 [main] LabTrackerETL - java.lang.RuntimeException: Failed : HTTP error code : 500
+[ERROR] 2017-06-08 01:11:08.491 [main] LabTrackerETL - Failed : HTTP error code : 500
+[ERROR] 2017-06-08 01:11:08.492 [main] LabTrackerETL - java.lang.RuntimeException: Failed : HTTP error code : 500
+[ERROR] 2017-06-08 01:23:48.523 [main] LabTrackerETL - Failed : HTTP error code : 500
+[ERROR] 2017-06-08 01:23:48.524 [main] LabTrackerETL - java.lang.RuntimeException: Failed : HTTP error code : 500
+[ERROR] 2017-06-08 01:27:42.230 [main] LabTrackerETL - Failed : HTTP error code : 500
+[ERROR] 2017-06-08 01:27:42.230 [main] LabTrackerETL - java.lang.RuntimeException: Failed : HTTP error code : 500
+[ERROR] 2017-06-08 01:28:46.982 [main] LabTrackerETL - Failed : HTTP error code : 500
+[ERROR] 2017-06-08 01:28:46.982 [main] LabTrackerETL - java.lang.RuntimeException: Failed : HTTP error code : 500
+[ERROR] 2017-06-08 01:32:39.911 [main] LabTrackerETL - Failed : HTTP error code : 500
+[ERROR] 2017-06-08 01:32:39.912 [main] LabTrackerETL - java.lang.RuntimeException: Failed : HTTP error code : 500
+[ERROR] 2017-06-08 01:37:28.433 [main] LabTrackerETL - Failed : HTTP error code : 500
+[ERROR] 2017-06-08 01:37:28.434 [main] LabTrackerETL - java.lang.RuntimeException: Failed : HTTP error code : 500
+[ERROR] 2017-06-08 01:37:32.215 [main] LabTrackerETL - Failed : HTTP error code : 500
+[ERROR] 2017-06-08 01:37:32.216 [main] LabTrackerETL - java.lang.RuntimeException: Failed : HTTP error code : 500
+[ERROR] 2017-06-08 01:41:23.420 [main] LabTrackerETL - Failed : HTTP error code : 500
+[ERROR] 2017-06-08 01:41:23.421 [main] LabTrackerETL - java.lang.RuntimeException: Failed : HTTP error code : 500
+[ERROR] 2017-06-08 01:49:46.113 [main] LabTrackerETL - Failed : HTTP error code : 500
+[ERROR] 2017-06-08 01:49:46.113 [main] LabTrackerETL - java.lang.RuntimeException: Failed : HTTP error code : 500
+[ERROR] 2017-06-08 01:54:51.706 [main] LabTrackerETL - Failed : HTTP error code : 500
+[ERROR] 2017-06-08 01:54:51.714 [main] LabTrackerETL - java.lang.RuntimeException: Failed : HTTP error code : 500
+[ERROR] 2017-06-08 01:58:13.028 [main] LabTrackerETL - Failed : HTTP error code : 500
+[ERROR] 2017-06-08 01:58:13.030 [main] LabTrackerETL - java.lang.RuntimeException: Failed : HTTP error code : 500
+[ERROR] 2017-06-08 01:58:44.492 [main] LabTrackerETL - Failed : HTTP error code : 500
+[ERROR] 2017-06-08 01:58:44.493 [main] LabTrackerETL - java.lang.RuntimeException: Failed : HTTP error code : 500
+[ERROR] 2017-06-08 02:02:03.825 [main] LabTrackerETL - Failed : HTTP error code : 500
+[ERROR] 2017-06-08 02:02:03.853 [main] LabTrackerETL - java.lang.RuntimeException: Failed : HTTP error code : 500
+[ERROR] 2017-06-08 02:05:59.403 [main] LabTrackerETL - Failed : HTTP error code : 500
+[ERROR] 2017-06-08 02:05:59.403 [main] LabTrackerETL - java.lang.RuntimeException: Failed : HTTP error code : 500
+[ERROR] 2017-06-08 02:09:52.463 [main] LabTrackerETL - Failed : HTTP error code : 500
+[ERROR] 2017-06-08 02:09:52.487 [main] LabTrackerETL - java.lang.RuntimeException: Failed : HTTP error code : 500
+[ERROR] 2017-06-08 02:13:43.064 [main] LabTrackerETL - Failed : HTTP error code : 500
+[ERROR] 2017-06-08 02:13:43.064 [main] LabTrackerETL - java.lang.RuntimeException: Failed : HTTP error code : 500
+[ERROR] 2017-06-08 02:16:43.148 [main] LabTrackerETL - Failed : HTTP error code : 502
+[ERROR] 2017-06-08 02:16:43.148 [main] LabTrackerETL - java.lang.RuntimeException: Failed : HTTP error code : 502

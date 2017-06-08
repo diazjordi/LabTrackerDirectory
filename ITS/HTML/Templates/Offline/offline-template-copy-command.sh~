@@ -1,0 +1,5 @@
+#!/bin/sh
+
+cp -f /home/superlib/Desktop/LabTracker/Library-North-1st/html/templates/Offline/librarynorth1st.html /var/www/html/TestPages
+
+echo "Done!"

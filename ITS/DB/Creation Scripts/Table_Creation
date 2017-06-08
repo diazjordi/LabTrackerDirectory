@@ -1,0 +1,52 @@
+
+# Creates Labs table,
+# this table contains all the unique fields for each lab
+# also contains all currently scanned labs, program will scan this table if no 
+# labs provided in property file
+CREATE TABLE `labtrackerETL`.`labs` (
+  `id` VARCHAR(45) NOT NULL,
+  `map_id` VARCHAR(45) NOT NULL,
+  `map_name` VARCHAR(45) NOT NULL,
+  `map_desc` VARCHAR(45) NOT NULL,
+  PRIMARY KEY (`id`));
+
+# Populate Labs table
+INSERT INTO labs 
+	( id, map_id, map_name, map_desc )
+VALUES
+	('1002','1002','Library North 1000','LN1000'),
+	('1010','1010','Library North 2000','LN2000'),
+	('1012','1012','Library North 3000','LN3000'),
+	('1016','1016','Library North B101','LNB101'),
+	('1015','1015','Library North B105','LNB105');
+
+# Creates LabStatus table,
+# contains most current and all status updates for all labs
+CREATE TABLE `labtrackerETL`.`labstatus` (
+  `index` INT NOT NULL AUTO_INCREMENT,
+  `id` VARCHAR(45) NOT NULL,
+  `map_id` VARCHAR(45) NOT NULL,
+  `map_name` VARCHAR(45) NOT NULL,
+  `map_desc` VARCHAR(45) NOT NULL,
+  `units_available` INT NOT NULL,
+  `units_in_use` INT NOT NULL,
+  `unit_offline` INT NOT NULL,
+  `timestamp` TIMESTAMP NOT NULL,
+  PRIMARY KEY (`index`));
+
+# Creates Lab table, specific to a single lab
+# change LN1000 to whatever is the "MapDesc" provided by LabStats
+# that "MapDesc" is how the program will find the lab specific tables
+CREATE TABLE `labtrackerETL`.`LN1000` (
+  `index` INT NOT NULL AUTO_INCREMENT,
+  `id` VARCHAR(45) NOT NULL,
+  `map_station_id` VARCHAR(45) NOT NULL,
+  `map_id` VARCHAR(45) NOT NULL,
+  `group_id` VARCHAR(45) NOT NULL,
+  `station_id` VARCHAR(45) NOT NULL,
+  `host_name` VARCHAR(45) NOT NULL,
+  `ip` VARCHAR(45) NOT NULL,
+  `station_name` VARCHAR(45) NOT NULL,
+  `status` VARCHAR(45) NOT NULL,
+  `timestamp` TIMESTAMP NOT NULL,
+  PRIMARY KEY (`index`));

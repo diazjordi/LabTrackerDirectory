@@ -1,0 +1,219 @@
+<?php $config = require('/var/www/Resources/PHP/config1.php'); ?>
+<?php include($config['header']); ?>
+    
+        <body>
+
+            <!--top of page row-->
+            <div class="container col-md-12">                
+                <div class="row">
+                    <div class="col-md-6 text-left" id="name">
+                        <h1>Annex Link</h1>
+                        <h1></h1>
+                        <h3>These computers should be available</h3>
+                    </div>
+                    <div class="col-md-6 text-right" id="date">
+                        <h2></h2>
+                    </div>
+                </div>
+            </div>
+            <hr>
+
+            <!-- JS date -->
+            <script>
+                var d = new Date();
+                var weekdays = new Array(7);
+                    weekdays[0] = "Sun";
+                    weekdays[1] = "Mon";
+                    weekdays[2] = "Tue";
+                    weekdays[3] = "Wed";
+                    weekdays[4] = "Thu";
+                    weekdays[5] = "Fri";
+                    weekdays[6] = "Sat";
+                var weekday = weekdays[d.getDay()];
+                var months = new Array(12);
+                    months[0] = "Jan";
+                    months[1] = "Feb";
+                    months[2] = "Mar";
+                    months[3] = "Apr";
+                    months[4] = "May";
+                    months[5] = "Jun";
+                    months[6] = "Jul";
+                    months[7] = "Aug";
+                    months[8] = "Sep";
+                    months[9] = "Oct";
+                    months[10] = "Nov";
+                    months[11] = "Dec";
+                var month = months[d.getMonth()];
+                var monthDay = d.getDate();
+
+                var formattedDate = weekday + ', ' + month + ' ' + monthDay;
+                document.getElementById("date").innerHTML = n;
+            </script>
+
+            <!--CSS for table/map-->
+            <style type="text/css">
+                .container    {margin: 0 auto !important; float: none !important; text-align: center;}
+
+                table         {border-collapse:collapse;border-spacing:0;margin: 0px auto; float: none; width: 90% !important;font-family: "Times New Roman", Times, serif; height: 60%;table-layout: fixed;}
+                td            {font-size:36px;padding:1px 1px;border-style:hidden;border-width:0px;overflow:hidden;word-break:normal;height:50px;}
+                .station-cell {background-color:#000000;color:#000000;}
+                .pathway-cell {background-color:#FFCB2F;color:#FFCB2F;}
+                .printer-cell {background-color:#000000;color:#FFCB2F;}
+                .pillar-cell  {background-color:#000000;color:#FFCB2F;}
+                .user-cell    {background-color:#FFCB2F;color:#000000;}
+                .object-cell  {background-color:#424A56;color:#FFCB2F;}                
+                                            
+                a:visited     {color: #000000;}
+                a:link        {color: #000000;}
+            </style>
+                        
+            <!--info container-->
+            <div class="container">
+                <div class="row">
+                    <h3>
+                        <div class="col-xs-12 col-md-3 col-md-offset-1 text-center">
+                            $numAvail of $numUnits available
+                        </div>
+                        <div class="col-xs-12 col-md-4 text-center">
+                            Updated Every <?php echo $config['update_interval'] ?> minute(s)
+                        </div>
+                        <div class="col-xs-12 col-md-3 text-center">
+                            Last Updated: $time
+                        </div>
+                    </h3>
+                </div>
+            </div>
+
+            <!-- availColor =    #FFCB2F -->
+            <!-- noStatusColor = #595138 -->
+            <!-- inUseColor =    #665113 -->    
+
+            <!--table container-->
+            <div class="container col-md-9">
+                <div class="row">
+                    <table class="table table-responsive table-condensed text-center">
+                        <tr>
+                            <td class="pathway-cell" colspan="10"></td>
+                        </tr>
+                        <tr>
+                            <td class="station-cell"><!--$a1-->A1</td>
+                            <td class="station-cell"><!--$a2-->A2</td>
+                            <td class="station-cell"><!--$a3-->A3</td>
+                            <td class="station-cell"><!--$a4-->A4</td>
+                            <td class="pathway-cell" colspan="6"></td>
+                        </tr>
+                        <tr>
+                            <td class="station-cell"><!--$b1-->B1</td>
+                            <td class="station-cell"><!--$b2-->B2</td>
+                            <td class="station-cell"><!--$b3-->B3</td>
+                            <td class="station-cell"><!--$b4-->B4</td>
+                            <td class="pathway-cell" colspan="1"></td>
+                            <td class="printer-cell" colspan="5">PRINTERS</td>
+                        </tr>
+                        <tr>
+                            <td class="pathway-cell" colspan="10"></td>
+                        </tr>
+                        <tr>
+                            <td class="station-cell"><!--$c1-->C1</td>
+                            <td class="station-cell"><!--$c2-->C2</td>
+                            <td class="station-cell"><!--$c3-->C3</td>
+                            <td class="station-cell"><!--$c4-->C4</td>
+                            <td class="pathway-cell"></td>
+                            <td class="station-cell"><!--$o5-->O5</td>
+                            <td class="station-cell"><!--$o4-->O4</td>
+                            <td class="station-cell"><!--$o3-->O3</td>
+                            <td class="station-cell"><!--$o2-->O2</td>
+                            <td class="station-cell"><!--$o1-->O1</td>
+                        </tr>
+                        <tr>
+                            <td class="station-cell"><!--$d1-->D1</td>
+                            <td class="station-cell"><!--$d2-->D2</td>
+                            <td class="station-cell"><!--$d3-->D3</td>
+                            <td class="station-cell"><!--$d4-->D4</td>
+                            <td class="pathway-cell"></td>
+                            <td class="station-cell"><!--$n5-->N5</td>
+                            <td class="station-cell"><!--$n4-->N4</td>
+                            <td class="station-cell"><!--$n3-->N3</td>
+                            <td class="station-cell"><!--$n2-->N2</td>
+                            <td class="station-cell"><!--$n1-->N1</td>
+                        </tr>
+                        <tr>
+                            <td class="pathway-cell" colspan="10"></td>
+                        </tr>
+                        <tr>
+                            <td class="station-cell"><!--$e1-->E1</td>
+                            <td class="station-cell"><!--$e2-->E2</td>
+                            <td class="station-cell"><!--$e3-->E3</td>
+                            <td class="station-cell"><!--$e4-->E4</td>
+                            <td class="pathway-cell"></td>
+                            <td class="station-cell"><!--$m5-->M5</td>
+                            <td class="station-cell"><!--$m4-->M4</td>
+                            <td class="station-cell"><!--$m3-->M3</td>
+                            <td class="station-cell"><!--$m2-->M2</td>
+                            <td class="station-cell"><!--$m1-->M1</td>
+                        </tr>
+                        <tr>
+                            <td class="station-cell"><!--$f1-->F1</td>
+                            <td class="station-cell"><!--$f2-->F2</td>
+                            <td class="station-cell"><!--$f3-->F3</td>
+                            <td class="station-cell"><!--$f4-->F4</td>
+                            <td class="pathway-cell"></td>
+                            <td class="station-cell"><!--$l5-->L5</td>
+                            <td class="station-cell"><!--$l4-->L4</td>
+                            <td class="station-cell"><!--$l3-->L3</td>
+                            <td class="station-cell"><!--$l2-->L2</td>
+                            <td class="station-cell"><!--$l1-->L1</td>
+                        </tr>
+                        <tr>
+                            <td class="pathway-cell" colspan="10"></td>
+                        </tr>
+                        <tr>
+                            <td class="station-cell"><!--$g1-->G1</td>
+                            <td class="station-cell"><!--$g2-->G2</td>
+                            <td class="station-cell"><!--$g3-->G3</td>
+                            <td class="station-cell"><!--$g4-->G4</td>
+                            <td class="pathway-cell"></td>
+                            <td class="station-cell"><!--$k5-->K5</td>
+                            <td class="station-cell"><!--$k4-->K4</td>
+                            <td class="station-cell"><!--$k3-->K3</td>
+                            <td class="station-cell"><!--$k2-->K2</td>
+                            <td class="station-cell"><!--$k1-->K1</td>
+                        </tr>
+                        <tr>
+                            <td class="station-cell"><!--$h1-->H1</td>
+                            <td class="station-cell"><!--$h2-->H2</td>
+                            <td class="station-cell"><!--$h3-->H3</td>
+                            <td class="station-cell"><!--$h4-->H4</td>
+                            <td class="pathway-cell"></td>
+                            <td class="station-cell"><!--$j5-->J5</td>
+                            <td class="station-cell"><!--$j4-->J4</td>
+                            <td class="station-cell"><!--$j3-->J3</td>
+                            <td class="station-cell"><!--$j2-->J2</td>
+                            <td class="station-cell"><!--$j1-->J1</td>
+                        </tr>
+                        <tr>
+                            <td class="pathway-cell" colspan="10"></td>
+                        </tr>
+                        <tr>
+                            <td class="station-cell"><!--$i1-->I1</td>
+                            <td class="station-cell"><!--$i2-->I2</td>
+                            <td class="station-cell"><!--$i3-->I3</td>
+                            <td class="station-cell"><!--$i4-->I4</td>
+                            <td class="pathway-cell" colspan="6"></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+                    
+            <!--count container-->
+            <div class="container col-md-8" id="info">
+                <div class="row">
+                    <h3>$availSummary $inUseSummary $offSummary</h3>
+                </div>
+            </div>
+
+            <?php include($config['footer']); ?>
+
+        </body>
+
+    </html>
